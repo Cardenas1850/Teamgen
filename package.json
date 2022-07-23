@@ -1,0 +1,27 @@
+{
+  "name": "teamgen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cardenas1850/Teamgen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cardenas1850/Teamgen/issues"
+  },
+  "homepage": "https://github.com/Cardenas1850/Teamgen#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "inquirer": "^9.0.2",
+    "jest": "^28.1.3"
+  }
+}
