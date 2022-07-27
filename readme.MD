@@ -33,7 +33,7 @@ Contributors should read the installation section.
 
 ## Tests
 
-Run `npm test` to run Jest for tests on constructors.
+Run `npm run test` to run Jest for tests on constructors.
 
 ## Questions
 
