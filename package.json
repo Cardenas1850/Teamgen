@@ -1,13 +1,13 @@
 {
   "name": "teamgen",
   "version": "1.0.0",
-  "description": "",
+  "description": "![Github licence](http://img.shields.io/badge/license-MIT-blue.svg)",
   "main": "index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,9 @@
   "dependencies": {
     "fs": "^0.0.1-security",
     "inquirer": "^9.0.2",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
     "jest": "^28.1.3"
   }
 }
