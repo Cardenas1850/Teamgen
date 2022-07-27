@@ -6,10 +6,11 @@ const Manager = require('./lib/manager');
 const Engineer = require('./lib/engineer');
 const Intern = require('./lib/intern');
 
+
 //required node modules 
 const fs = require('fs');
 const inquirer = require('inquirer');
-const Employee = require('./lib/employee');
+
 
 //create team array
 const teamArray = [];
@@ -149,7 +150,7 @@ const addEmployee = () => {
         {
             type: 'input',
             name: 'github',
-            message: "Please enter the empolyees",
+            message: "Please enter the empolyees github username",
             when: (input) => input.role === "Engineer",
             validate: nameInput => {
                 if (nameInput) {
@@ -194,10 +195,16 @@ const addEmployee = () => {
             console.log(employee);
         }
         teamArray.push(employee);
+        
+        if (confirmAddEmployee === true) {
+            addEmployee;
+        }
 
         if (confirmAddEmployee) {
             return addEmployee(teamArray);
-        } else {
+        } 
+        
+        else {
             return teamArray;
         }
     }) 

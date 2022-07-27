@@ -9,7 +9,7 @@ const generateManager = function (manager) {
                                 </div>
                                 <div class="card-body">
                                     <p class="id">ID: ${manager.id}</p>
-                                    <p class="email">Email: ${manager.email}</a>${manager.email}</p>
+                                    <p class="email">Email: <a href=mailto:${manager.email}>${manager.email}</a></p>
                                     <p class="office"> Office Number:${manager.officeNumber}</p>
                                 </div>
                             </div>
@@ -27,8 +27,8 @@ const generateEngineer = function (engineer) {
                                 </div>
                                 <div class="card-body">
                                     <p class="id">ID: ${engineer.name}</p>
-                                    <p class="email">Email: <a href=mailto:${engineer.email}>${engineer.email}}</a></p>
-                                    <p class="github">Github<a href="${engineer.github}">Github</a></p>
+                                    <p class="email">Email: <a href=mailto:${engineer.email}>${engineer.email}</a></p>
+                                    <p class="github">Github<a href="https://github.com/${engineer.github}">Github</a></p>
                                 </div>
                             </div>
                         </div>
@@ -59,7 +59,7 @@ const generateIntern = function (intern) {
 generateHTML = (data) => {
     pageArray = []
 
-    for (let i=o; i < data.length; i++) {
+    for (let i=0; i < data.length; i++) {
         const employee = data[i];
         const role = employee.getRole();
         //functions to call specific roles

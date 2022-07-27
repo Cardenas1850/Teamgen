@@ -21,7 +21,7 @@
   "homepage": "https://github.com/Cardenas1850/Teamgen#readme",
   "dependencies": {
     "fs": "^0.0.1-security",
-    "inquirer": "^9.0.2",
+    "inquirer": "^8.2.4",
     "node-fetch": "^2.6.1"
   },
   "devDependencies": {
