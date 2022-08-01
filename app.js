@@ -41,7 +41,7 @@ const addManager = () => {
             message: "Please enter the ID",
             validate: nameInput => {
                 if (isNaN(nameInput)) {
-                    console.log("Please enter the ID number for the manger")
+                    console.log("Please enter the ID number for the manager")
                     return false;
                 } else {
                     return true;
@@ -92,7 +92,6 @@ const addEmployee = () => {
     console.log(`
     ================
     Adding Employees to your team!
-
     ================
     `);
 
@@ -176,7 +175,7 @@ const addEmployee = () => {
         },
         {
             type: 'confirm',
-            name: 'confirmAddEmpolyee',
+            name: 'confirmAddEmployee',
             message: 'Would you like to add more team members?',
             default: false
         }
@@ -196,18 +195,12 @@ const addEmployee = () => {
         }
         teamArray.push(employee);
         
-        if (confirmAddEmployee === true) {
-            addEmployee;
-        }
-
         if (confirmAddEmployee) {
             return addEmployee(teamArray);
-        } 
-        
-        else {
+        } else {
             return teamArray;
         }
-    }) 
+})
 };
 
 // generate HTML
